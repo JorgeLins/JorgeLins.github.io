@@ -9,3 +9,7 @@
 .main-section .main-title{
     margin-bottom: 60px;
 }
+.main-section.-bgBlack{
+    background-color: #000;
+    border-bottom: 10px solid #00A17E;
+}
