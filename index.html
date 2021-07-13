@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="css/components/node-card.css">
     <link rel="stylesheet" href="css/components/main-carousel.css">
     <link rel="stylesheet" href="css/components/main-footer.css">
+    <link rel="stylesheet" href="css/components/main-label.css">
+    <link rel="stylesheet" href="css/components/main-input.css">
+    <link rel="stylesheet" href="css/components/main-form.css">
     
 </head>
 <body>
@@ -38,10 +41,10 @@
         <img src='assets/img/logo.png' alt='JLlogo'>
 
         <nav>
-            <a class="main-action" href="" lang="en">Skills</a>
-            <a class="main-action" href="">Projetos</a>
-            <a class="main-action" href="">Sobre</a>
-            <a class="main-action" href="">Contatos</a>
+            <a class="main-action" href="#Skill" lang="en">Skills</a>
+            <a class="main-action" href="#Projects">Projetos</a>
+            <a class="main-action" href="#About">Sobre</a>
+            <a class="main-action" href="#Forms">Contatos</a>
             <a class="main-button" href="" lang="en">Download CV</a>
         </nav>
     </header>
@@ -54,12 +57,12 @@
             </div>
             <div class="navigation">
                 <a class="main-button" href="" lang="en">Download CV</a>
-                <a class="main-button" href="">Contatos</a>
+                <a class="main-button" href="#Forms">Contatos</a>
             </div>
         </div>
     </section>
 
-    <section class="main-section">
+    <section id="Skill" class="main-section">
         <h2 class="main-title -second"> Skills </h2>
 
         <div class="wrapper-skill">
@@ -111,7 +114,7 @@
         </div>
     </section>
 
-    <section class="main-section -bgBlack">
+    <section id="Projects" class="main-section -bgBlack">
         <h2 class="main-title -second"> Projetos </h2>
 
         <div class="wrapper-card">
@@ -128,7 +131,7 @@
 
     </section>
 
-    <section class="main-section -BGblue">
+    <section id="About" class="main-section -BGblue">
         <h2 class="main-title -second"> Sobre </h2>
 
         <section class="main-carousel">
@@ -160,11 +163,24 @@
         </p>
     </section>
 
-    <section class="main-section -forms">
+    <section id="Forms" class="main-section">
+        <form class="main-form">
 
+            <h1 class="main-title -second">Contato</h1>
+            <label class="main-label" for="name">Nome</label>
+            <input class="main-input" id="name" type="text" required>
+
+            <label class="main-label" for="email">Email</label>
+            <input class="main-input" id="email" type="email" required>
+
+            <label class="main-label" for="message">Mensagem</label>
+            <textarea class="main-input -textarea" id="message" required></textarea>
+
+            <button class="main-button -blueBtn" type="submit">Enviar</button>
+        </form>
     </section>
 
-    <footer class="main-footer">
+    <footer id="Footer" class="main-footer">
         <a class="action" href="https://www.linkedin.com/in/jorge-lins-93175a1b6/" target="_blank">
             <img src="assets/img/linkedin.png" alt="LinkedinFooter">
         </a>
